@@ -1,0 +1,12 @@
+C:\Repos\FirstAPI\Entities\bin\Debug\net5.0\Entities.deps.json
+C:\Repos\FirstAPI\Entities\bin\Debug\net5.0\Entities.dll
+C:\Repos\FirstAPI\Entities\bin\Debug\net5.0\ref\Entities.dll
+C:\Repos\FirstAPI\Entities\bin\Debug\net5.0\Entities.pdb
+C:\Repos\FirstAPI\Entities\obj\Debug\net5.0\Entities.csproj.AssemblyReference.cache
+C:\Repos\FirstAPI\Entities\obj\Debug\net5.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\FirstAPI\Entities\obj\Debug\net5.0\Entities.AssemblyInfoInputs.cache
+C:\Repos\FirstAPI\Entities\obj\Debug\net5.0\Entities.AssemblyInfo.cs
+C:\Repos\FirstAPI\Entities\obj\Debug\net5.0\Entities.csproj.CoreCompileInputs.cache
+C:\Repos\FirstAPI\Entities\obj\Debug\net5.0\Entities.dll
+C:\Repos\FirstAPI\Entities\obj\Debug\net5.0\ref\Entities.dll
+C:\Repos\FirstAPI\Entities\obj\Debug\net5.0\Entities.pdb

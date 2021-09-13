@@ -1,0 +1,15 @@
+C:\Repos\FirstAPI\Contracts\bin\Debug\net5.0\Contracts.deps.json
+C:\Repos\FirstAPI\Contracts\bin\Debug\net5.0\Contracts.dll
+C:\Repos\FirstAPI\Contracts\bin\Debug\net5.0\ref\Contracts.dll
+C:\Repos\FirstAPI\Contracts\bin\Debug\net5.0\Contracts.pdb
+C:\Repos\FirstAPI\Contracts\bin\Debug\net5.0\Entities.dll
+C:\Repos\FirstAPI\Contracts\bin\Debug\net5.0\Entities.pdb
+C:\Repos\FirstAPI\Contracts\obj\Debug\net5.0\Contracts.csproj.AssemblyReference.cache
+C:\Repos\FirstAPI\Contracts\obj\Debug\net5.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\FirstAPI\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfoInputs.cache
+C:\Repos\FirstAPI\Contracts\obj\Debug\net5.0\Contracts.AssemblyInfo.cs
+C:\Repos\FirstAPI\Contracts\obj\Debug\net5.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Repos\FirstAPI\Contracts\obj\Debug\net5.0\Contracts.csproj.CopyComplete
+C:\Repos\FirstAPI\Contracts\obj\Debug\net5.0\Contracts.dll
+C:\Repos\FirstAPI\Contracts\obj\Debug\net5.0\ref\Contracts.dll
+C:\Repos\FirstAPI\Contracts\obj\Debug\net5.0\Contracts.pdb
