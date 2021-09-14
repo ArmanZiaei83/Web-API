@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Contracts;
 using Contracts.User;
 using EFCore;
@@ -7,7 +8,7 @@ namespace Services
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private UserDbContext Context = UserDbContext.GetContext();
+        private readonly UserDbContext Context = UserDbContext.GetContext();
 
         public IUserRepository UserRepository
         {
@@ -15,9 +16,9 @@ namespace Services
             set { }
         }
 
-        public void Save()
+        public async Task Save()
         {
-            Context.SaveChanges();
+            await Context.SaveChangesAsync();
         }
     }
 }

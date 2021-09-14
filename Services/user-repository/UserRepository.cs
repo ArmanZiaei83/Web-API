@@ -1,6 +1,7 @@
+using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
+using System.Threading.Tasks;
 using Contracts.User;
 using EFCore;
 using Entities.user;
@@ -12,58 +13,39 @@ namespace Services.user_repository
     {
         private readonly UserDbContext Context = UserDbContext.GetContext();
 
-        public void Add(User user)
+        public async Task<List<User>> GetAll()
         {
-            Context.Add(user);
+            return await Context.Users.ToListAsync();
         }
 
-        public void PutUpdate(int id, string name, string email, string password)
+        public async Task Add(User user)
         {
-            var result = Context.Users.SingleOrDefault(b => b.UserId == id);
-            if (result == null) return;
-            result.UserName = name;
-            result.UserEmail = email;
-            result.UserPassword = password;
+            await Context.Users.AddAsync(user);
         }
 
-        public void PatchUpdate(int id, string name, string password, string email)
+        public void DeleteById(int id)
         {
-            var user = Context.Users.Find(id);
-            Context.Users.Attach(user);
-            name = user.UserName;
-            email = user.UserEmail;
-            password = user.UserPassword;
-
-            var newUser = new User()
-            {
-                UserName = name,
-                UserEmail = email,
-                UserPassword = password,
-                UserId = id
-            };
-
-            Context.Users.Update(newUser);
+            Context.Users.Remove(Context.Users.Find(id));
         }
 
-        public List<User> GetAll()
+        public async Task<bool> Exists(int id)
         {
-            return Context.Users.ToList();
-        }
-
-        public void DeleteById(int userId)
-        {
-            Context.Users.Remove(new User()
-            {
-                UserId = userId
-            });
-        }
-
-        public bool Exists(int id)
-        {
-            return Context.Users.Contains(new User()
+            return await Context.Users.ContainsAsync(new User
             {
                 UserId = id
             });
+        }
+
+        public void Update(User user)
+        {
+            try
+            {
+                var DataList = GetAll().Result.Where(x => x.UserId == user.UserId).ToList();
+                foreach (var item in DataList) Context.Users.Update(item);
+            }
+            catch (Exception)
+            {
+            }
         }
     }
 }

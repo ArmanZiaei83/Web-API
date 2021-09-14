@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Contracts.User;
 
 namespace Contracts
@@ -5,6 +6,6 @@ namespace Contracts
     public interface IUnitOfWork
     {
         public IUserRepository UserRepository { get; set; }
-        void Save();
+        Task Save();
     }
 }
